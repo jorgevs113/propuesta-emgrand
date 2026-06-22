@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Propuesta Emgrand Jorge</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        *, *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', 'Segoe UI', Helvetica, Arial, sans-serif;
+            background-color: #0b0f19;
+            color: #f1f5f9;
+            line-height: 1.5;
+            margin: 0;
+            padding: 0;
+            font-size: 10.5pt;
+        }
+
+        .page-wrapper {
+            padding: 25mm 20mm;
+            background: radial-gradient(circle at top right, #1e293b 0%, #0b0f19 70%);
+        }
+
+        .header-main {
+            border-bottom: 4px solid #00529b;
+            padding-bottom: 20px;
+            margin-bottom: 35px;
+            position: relative;
+        }
+
+        .header-main::after {
+            content: "";
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background-color: #10b981;
+        }
+
+        h1 {
+            color: #ffffff;
+            font-size: 28pt;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 900;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .card-glow {
+            background: rgba(30, 41, 59, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            page-break-inside: avoid;
+        }
+
+        .card-glow.accent-blue { border-left: 6px solid #00529b; }
+        .card-glow.accent-cyan { border-left: 6px solid #06b6d4; }
+        .card-glow.accent-green { border-left: 6px solid #10b981; }
+
+        .card-title {
+            font-size: 13pt;
+            color: #ffffff;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+        }
+
+        .bullet-list {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .bullet-list li {
+            margin-bottom: 12px;
+            list-style-type: none;
+            position: relative;
+        }
+
+        .bullet-list li::before {
+            content: "⚡";
+            position: absolute;
+            left: -20px;
+            color: #06b6d4;
+        }
+
+        .bold-lead {
+            font-weight: 700;
+            color: #06b6d4;
+        }
+
+        .hero-metric {
+            background: linear-gradient(135deg, #00529b 0%, #06b6d4 100%);
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            text-align: center;
+            font-size: 14pt;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 20px rgba(6, 182, 212, 0.25);
+            page-break-inside: avoid;
+        }
+
+        .small-parenthesis {
+            display: block;
+            font-size: 10.5pt;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 5px;
+        }
+
+        .nested-box {
+            background: rgba(15, 23, 42, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            page-break-inside: avoid;
+        }
+
+        .nested-title {
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 12px;
+            font-size: 11pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .bar-bg {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 6px;
+            height: 10px;
+            width: 100%;
+            overflow: hidden;
+            margin-top: 6px;
+        }
+
+        .bar-fill {
+            height: 100%;
+            border-radius: 6px;
+        }
+        .bar-fill.v-color { width: 71.39%; background: linear-gradient(90deg, #00529b, #06b6d4); }
+        .bar-fill.a-color { width: 28.61%; background: linear-gradient(90deg, #7c3aed, #a855f7); }
+
+        .price-badge {
+            display: inline-block;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 4px 8px;
+            border-radius: 4px;
+            color: #ffffff;
+            font-weight: 700;
+        }
+        
+        .green-glow {
+            color: #10b981;
+            font-weight: 800;
+        }
+    </style>
+</head>
+<body>
+
+<div class="page-wrapper">
+
+    <div class="header-main">
+        <h1>Propuesta Cápsula Emgrand</h1>
+    </div>
+
+    <div class="card-glow accent-blue">
+        <div class="card-title">🚗 Características de la Cápsula</div>
+        <p>Se propone una cápsula dentro de El podcast de los autos con las siguientes características:</p>
+        <ul class="bullet-list">
+            <li><span class="bold-lead">Duración:</span> Entre 2 y 3 minutos por intervención.</li>
+            <li><span class="bold-lead">Periodicidad:</span> 1 vez por semana. Se deja un episodio de colchón porque eventualmente puede no haber podcast, así con este esquema cubrimos cualquier falta sin bronca y evitamos saturar a la audiencia.</li>
+            <li><span class="bold-lead">Contenido:</span> La cápsula siempre la llevará Jorge. Será una bitácora del uso diario y real del auto, incluyendo reseñas de accesorios, historia del modelo, curiosidades y cualquier tema relevante sobre el Emgrand. El espacio también funcionará eventualmente para leer comunicados y/o pautas directas de la marca.</li>
+            <li><span class="bold-lead">Regla 80/20:</span> Por cada 4 cosas positivas se expondrá abiertamente algo que simplemente no guste del auto, alguna inconformidad o una queja puntual, esto para mantener la línea editorial del podcast.</li>
+            <li><span class="bold-lead">Transparencia:</span> La audiencia sabrá desde el día uno sobre la colaboración con Geely.</li>
+            <li><span class="bold-lead">Redirección:</span> La cápsula es el gancho. Jorge dirige a la audiencia a sus redes para mostrar infografías, detalles técnicos, fotos, historias, responder preguntas, mientras que el tráfico con interest comercial se manda directo a las redes de El Mago para que él sea el puente con la marca.</li>
+        </ul>
+    </div>
+
+    <div class="card-glow accent-cyan">
+        <div class="card-title">📊 Audiencia</div>
+        
+        <div class="hero-metric">
+            Total de impactos promedio por episodio: 15,328
+            <span class="small-parenthesis">( Promedio de los 10 últimos episodios emitidos).</span>
+        </div>
+
+        <div class="nested-box">
+            <div class="nested-title">📹 Segmento Video (71.39% - 10,943 impactos)</div>
+            <div class="bar-bg"><div class="bar-fill v-color"></div></div>
+            <ul class="bullet-list" style="margin-top: 15px;">
+                <li>YouTube (Video): 6,967 (45.45%)</li>
+                <li>Facebook (Video): 3,726 (24.31%)</li>
+                <li>X / Twitter (Video): 250 (1.63%)</li>
+            </ul>
+        </div>
+
+        <div class="nested-box">
+            <div class="nested-title">📻 Segmento Audio (28.61% - 4,385 impactos)</div>
+            <div class="bar-bg"><div class="bar-fill a-color"></div></div>
+            <ul class="bullet-list" style="margin-top: 15px;">
+                <li>Spotify (Audio): 2,204 (14.38%)</li>
+                <li>Apple Podcasts (Audio): 1,368 (8.92%)</li>
+                <li>YouTube (Audio): 713 (4.65%)</li>
+                <li>Red RSS (Amazon, iHeart Radio, Tesla y otros): 100 (0.66%)</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card-glow accent-blue">
+        <div class="card-title">👥 Perfil Demográfico</div>
+        <ul class="bullet-list">
+            <li><span class="bold-lead">Género:</span> Masculino (96.5% - 99.6%)</li>
+            <li><span class="bold-lead">Edad (Rangos principales):</span>
+                <ul class="bullet-list" style="margin-top: 5px;">
+                    <li>35-44 años: 41.0% - 48.6%</li>
+                    <li>25-34 años: 20.0% - 32.6%</li>
+                </ul>
+            </li>
+            <li><span class="bold-lead">Ubicación:</span> México (93.1%)</li>
+        </ul>
+    </div>
+
+    <div class="card-glow accent-green">
+        <div class="card-title">💰 Desglose Financiero, Retorno de Inversión (ROI)</div>
+        
+        <div class="nested-box">
+            <div class="nested-title">🎯 Audiencia e Impacto Garantizado</div>
+            <ul class="bullet-list">
+                <li><span class="bold-lead">Alcance:</span> 15,300 reproducciones/escuchas comprobables por episodio.</li>
+                <li><span class="bold-lead">Formato de entrega:</span> 1 cápsula semanal de 2 a 3 minutos durante 2 años (104 semanas en total).</li>
+            </ul>
+        </div>
+
+        <div class="nested-box">
+            <div class="nested-title">💎 Nuestra Oferta (Costo Preferencial)</div>
+            <p style="margin: 5px 0 12px 0; font-style: italic; color: #94a3b8;">Se cotiza el espacio con un presupuesto ajustado (bajo) considerando que la cápsula será llevada por Jorge.</p>
+            <ul class="bullet-list">
+                <li>Costo por episodio: <span class="price-badge">$2,865.29 MXN</span></li>
+                <li>Costo por cada 1,000 escuchas (CPM) por cada 60 segundos: <span class="price-badge">$62.33 MXN</span></li>
+                <li>Valor total del paquete: <span class="price-badge">$297,990 MXN (Precio Público del Emgrand GL)</span></li>
+            </ul>
+        </div>
+
+        <div class="nested-box">
+            <div class="nested-title">🏢 Valor Real de Mercado (Earned Media Value - EMV)</div>
+            <p style="margin: 5px 0 12px 0; font-style: italic; color: #94a3b8;">Este es el costo real en la industria por un espacio de nicho automotriz con más de 15,000 impactos comprobables.</p>
+            <ul class="bullet-list">
+                <li>Costo de mercado por episodio: <span class="price-badge">$10,000 MXN</span></li>
+                <li>Costo por cada 1,000 escuchas (CPM) por cada 60 segundos: <span class="price-badge">$217.47 MXN</span></li>
+                <li>Valor Real de Mercado (Earned Media Value - EMV): <span class="price-badge">$1,040,000 MXN</span></li>
+            </ul>
+        </div>
+
+        <div class="nested-box" style="border-left: 4px solid #10b981; background: rgba(16, 185, 129, 0.05);">
+            <div class="nested-title" style="color: #10b981;">🚀 Retorno de Inversión (ROI) Mediático para Geely</div>
+            <p style="margin: 5px 0 12px 0; font-style: italic; color: #94a3b8;">La marca obtiene un balance a favor masivo. Tomando como referencia el precio de lista público del Emgrand GL.</p>
+            <ul class="bullet-list">
+                <li>Valor Mediático Entregado (EMV): <span class="price-badge">$1,040,000 MXN</span></li>
+                <li>Precio Público del Emgrand GL: <span class="price-badge">-$297,990 MXN</span></li>
+                <li>Ganancia Neta en Exposición para Geely: <span class="green-glow">+$742,010 MXN</span></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
